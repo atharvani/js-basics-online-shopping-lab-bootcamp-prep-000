@@ -92,8 +92,8 @@ function removeFromCart(item)
           removeItem = true;
           console.log(removeItem + cart[i] + i)
           //Object.assign(objCart,objItem);
-          delete  cart[Object.keys(cart[i])];
-
+          removeItem = delete  cart[Object.keys(cart[i])];
+          console.log(removeItem + " " + itemName + " item deleted");
         }
     }
     //if(removeItem == true)
