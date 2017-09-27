@@ -79,35 +79,23 @@ function removeFromCart(item)
 {
   // write your code here
   var removeItem = false;
-  var objCart = new Object();
-console.log(cart.length);
-    for(var i=0; i< cart.length; i++)
-    {
-        var itemName = Object.keys(cart[i]);
-        var price = cart[i][itemName]
-        if(Object.prototype.hasOwnProperty.call(cart[i],item))
-        {
-          var objItem = new Object();
-          objItem[itemName] = price;
-          removeItem = true;
-          console.log(removeItem + cart[i] + i)
-          //Object.assign(objCart,objItem);
-          cart.splice(i, 1);
-          //removeItem = delete  cart[i];//[Object.keys(cart[i])];
-          console.log(removeItem + " " + itemName + " item deleted");
-        }
-    }
+
+  for(var i=0; i< cart.length; i++)
+  {
+      var itemName = Object.keys(cart[i]);
+      var price = cart[i][itemName]
+      if(Object.prototype.hasOwnProperty.call(cart[i],item))
+      {
+        removeItem = true;
+        cart.splice(i, 1);
+      }
+  }
 
   if(removeItem != true)
   {
     console.log("That item is not in your cart.");
   }
-  for(var i=0; i< cart.length; i++)
-  {
-      var itemName1 = Object.keys(cart[i]);
-      var price1 = cart[i][itemName1]
-      console.log(itemName1 + price1);
-}
+  
   return cart;
 }
 
