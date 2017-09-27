@@ -93,7 +93,7 @@ console.log(cart.length);
           console.log(removeItem + cart[i] + i)
           //Object.assign(objCart,objItem);
           cart.splice(i, 1);
-          removeItem = delete  cart[i];//[Object.keys(cart[i])];
+          //removeItem = delete  cart[i];//[Object.keys(cart[i])];
           console.log(removeItem + " " + itemName + " item deleted");
         }
     }
