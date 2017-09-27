@@ -97,7 +97,7 @@ console.log(cart.length);
           console.log(removeItem + " " + itemName + " item deleted");
         }
     }
-  
+
   if(removeItem != true)
   {
     console.log("That item is not in your cart.");
