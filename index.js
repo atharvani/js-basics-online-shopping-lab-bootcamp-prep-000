@@ -92,7 +92,7 @@ function removeFromCart(item)
           removeItem = true;
           console.log(removeItem + cart[i] + i)
           //Object.assign(objCart,objItem);
-          removeItem = delete  cart[i]//[Object.keys(cart[i])];
+          removeItem = delete  cart[i];//[Object.keys(cart[i])];
           console.log(removeItem + " " + itemName + " item deleted");
         }
     }
