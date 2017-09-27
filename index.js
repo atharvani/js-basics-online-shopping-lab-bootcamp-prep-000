@@ -104,12 +104,12 @@ console.log(cart.length);
   {
     console.log("That item is not in your cart.");
   }
-  /*for(var i=0; i< cart.length; i++)
+  for(var i=0; i< cart.length; i++)
   {
       var itemName1 = Object.keys(cart[i]);
       var price1 = cart[i][itemName1]
       console.log(itemName1 + price1);
-}*/
+}
   return cart;
 }
 
