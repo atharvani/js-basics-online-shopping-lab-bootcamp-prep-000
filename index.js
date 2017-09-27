@@ -80,7 +80,7 @@ function removeFromCart(item)
   // write your code here
   var removeItem = false;
   var objCart = new Object();
-
+console.log(cart.length);
     for(var i=0; i< cart.length; i++)
     {
         var itemName = Object.keys(cart[i]);
