@@ -97,10 +97,8 @@ console.log(cart.length);
           console.log(removeItem + " " + itemName + " item deleted");
         }
     }
-    //if(removeItem == true)
-      //cart = Object.assign({}, objCart);
-console.log(cart.length);
-   if(removeItem != true)
+  
+  if(removeItem != true)
   {
     console.log("That item is not in your cart.");
   }
@@ -124,11 +122,3 @@ function placeOrder(cardNumber) {
     cart = [];
   }
 }
-
-
-addToCart("vanilla");
-addToCart("watermelon");
-addToCart("yams");
-
-removeFromCart("watermelon");
-removeFromCart("yams");
